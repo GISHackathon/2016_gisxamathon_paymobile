@@ -17,9 +17,9 @@ class DistributeCol extends Component {
   }
 
   render() {
-    const {data:{items}} = this.props;
+    const {data} = this.props;
 
-    const itemsElms = items ? items.map((dataItem, key) => {
+    const itemsElms = data ? data.map((dataItem, key) => {
       return <OrderItem state={'distribute'} data={dataItem} key={dataItem.id || key} onDistributed={this.onDistributed.bind(this)}/>
     }) : null;
 

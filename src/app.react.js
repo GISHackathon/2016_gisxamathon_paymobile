@@ -2,6 +2,7 @@ import {connect} from 'react-redux';
 import PrepareCol from './prepareCol.react'
 import CheckinCol from './checkinCol.react'
 import DistributeCol from './distributeCol.react'
+import DoneCol from './doneCol.react'
 import React, {Component} from 'react';
 import {loadOrders} from './actions';
 
@@ -42,7 +43,7 @@ class App extends Component {
                 <PrepareCol data={prepare} />
                 <CheckinCol data={checkin} />
                 <DistributeCol data={distribute} />
-                <div className={"col-xs-3"}>.col-xs-kkkkklll</div>
+                <DoneCol data={done} />
               </div>
           </div>
         </div>

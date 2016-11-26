@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import OrderItem from './orderItem.react';
 
-export default class PrepareCol extends Component {
+export default class DoneCol extends Component {
   constructor(props) {
     super(props);
   }
@@ -9,13 +9,13 @@ export default class PrepareCol extends Component {
   render() {
     const {data} = this.props;
     const itemsElms = data ? data.map((dataItem, key) => {
-      return <OrderItem state={'prepare'} data={dataItem} key={dataItem.id || key}/>
+      return <OrderItem state={'done'} data={dataItem} key={dataItem.id || key}/>
     }) : null;
 
     return (
       <div className={"col-xs-3"}>
         <h2>
-          PŘIPRAVIT
+          HOTOVO
         </h2>
         {itemsElms}
       </div>

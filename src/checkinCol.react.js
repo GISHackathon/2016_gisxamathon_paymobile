@@ -7,9 +7,9 @@ export default class CheckinCol extends Component {
   }
 
   render() {
-    const {data:{items}} = this.props;
+    const {data} = this.props;
 
-    const itemsElms = items ? items.map((dataItem, key) => {
+    const itemsElms = data ? data.map((dataItem, key) => {
       return <OrderItem state={'checkin'} data={dataItem} key={dataItem.id || key}/>
     }) : null;
 
@@ -18,7 +18,7 @@ export default class CheckinCol extends Component {
         <h2>
           ODBAVIT
         </h2>
-        {items}
+        {itemsElms}
       </div>
     )
   }

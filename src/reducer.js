@@ -4,18 +4,10 @@ const config = {
   reloading: false,
   uploading: false,
   dashboard: {
-    prepare:{
-      items:[]
-    },
-    checkin:{
-      items:[]
-    },
-    distribute:{
-      items:[]
-    },
-    done:{
-      items:[]
-    }
+    prepare:[],
+    checkin:[],
+    distribute:[],
+    done:[]
   }
 }
 
