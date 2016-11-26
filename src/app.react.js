@@ -32,7 +32,7 @@ class App extends Component {
         </nav>
         <div className={"container"}>
           <div className={"dashboard-table"}>
-            <h1>Products</h1>
+            <h1>Zboží</h1>
             {productsElms}
           </div>
         </div>
