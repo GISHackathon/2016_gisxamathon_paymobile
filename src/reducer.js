@@ -1,14 +1,7 @@
 import {combineReducers} from 'redux';
 
 const config = {
-  reloading: false,
-  uploading: false,
-  dashboard: {
-    prepare:[],
-    checkin:[],
-    distribute:[],
-    done:[]
-  }
+  products:[]
 }
 
 export default (state, action) => {
@@ -17,18 +10,10 @@ export default (state, action) => {
   }
 
   switch (action.type) {
-    case 'setLoading':
+    case 'setProducts':
       return Object.assign({}, state, {
-        reloading: action.loading
+        products: action.products
       })
-    case 'setUploading':
-      return Object.assign({}, state, {
-        uploading: action.uploading
-      })
-    case 'setData':
-      return Object.assign({}, state, {
-        dashboard: action.data
-      });
     default:
       return state;
   }
